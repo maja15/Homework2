@@ -14,7 +14,7 @@ namespace Homework2
             int num2;
             string operand;
             int result;
-            bool isNumber = true;
+            bool isNumber;
 
             Console.WriteLine("Please enter the operation: ");
             operand = Console.ReadLine();
