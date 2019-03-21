@@ -14,7 +14,6 @@ namespace Homework2
             int num2;
             string operand;
             int result;
-            bool isNumber;
 
             Console.WriteLine("Please enter the operation: ");
             operand = Console.ReadLine();
@@ -24,11 +23,7 @@ namespace Homework2
 
             Console.WriteLine("Please enter second number: ");
             num2 = Convert.ToInt32(Console.ReadLine());
-
-            isNumber = int.TryParse(operand, out num1);
-
-            if (isNumber)
-            {
+            
                 switch (operand)
                 {
                     case "+":
@@ -45,18 +40,11 @@ namespace Homework2
                         break;
                     default:
                         result = 0;
-                        Console.WriteLine("That was not an operand! Please try again: ");
                         break;
                 }
                 Console.WriteLine("The result is: " + result);
-            }
-            else
-            {
-                Console.WriteLine("Invalid number, please try again: ");
-            }
             
-            Console.ReadLine();
+                Console.ReadLine();
         }
     }
-    
 }
